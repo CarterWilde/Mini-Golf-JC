@@ -7,6 +7,12 @@
 # BlueJ files
 *.ctxt
 
+# Editor preferences for a class etc, see http://lists.bluej.org/pipermail/bluej-discuss/2003-May/002351.html
+*.ctxt
+
+# Duplicate of project file, see http://www.hs-owl.de/fb5/labor/it/de/if1/vl/IF1JavaOhneBluej.pdf, page 4
+bluej.pkh
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
@@ -20,4 +26,9 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+<<<<<<< HEAD
 MiniGolf/package.bluej
+=======
+
+*.bluej
+>>>>>>> Objects
