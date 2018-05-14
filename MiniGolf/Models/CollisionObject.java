@@ -1,3 +1,5 @@
+package Models;
+
 public class CollisionObject extends DisplayObject{
     int thistop, thisbottom, thisright, thisleft;
     public CollisionObject(){

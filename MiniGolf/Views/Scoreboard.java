@@ -1,9 +1,11 @@
+package Views;
+
  
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-
+import Models.*;
 public class Scoreboard extends JComponent{
     private boolean isScoreBoardVisible;
     private ArrayList<Post> posts;

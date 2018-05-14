@@ -1,3 +1,5 @@
+package Models;
+
 import Views.*;
 public class Golfball extends Sprite
 {

@@ -1,3 +1,5 @@
+package Models;
+
  
 
 import javax.swing.JComponent;
@@ -5,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.Color;
 
-class Post extends JComponent{
+public class Post extends JComponent{
   private JLabel[] cols;
   public Post(String str1, String str2, String str3){
     setBounds(0, 0, 150, 50);
