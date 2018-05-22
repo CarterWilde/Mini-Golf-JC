@@ -7,7 +7,6 @@ import java.awt.event.*;
 
 public class UI extends JFrame{
   JButton close;
-  JComponent game;
   Scoreboard scoreBoard;
   public UI(boolean sb){
     setBounds(0,0,1000,700);
@@ -31,8 +30,7 @@ public class UI extends JFrame{
     add(close,0);
   }
   public void addGameObject(JComponent jc){
-    game = jc;
-    add(game);
+    add(jc);
   }
   public Scoreboard getScoreBoard() {
     return scoreBoard;
