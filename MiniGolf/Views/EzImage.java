@@ -12,7 +12,7 @@ import java.awt.Image;
 public class EzImage extends JComponent{
 //implements java.awt.image.ImageObserver, MouseListener  {
     private Image content;
-  
+    
 // Constructor methods
     public EzImage()  {
         super();

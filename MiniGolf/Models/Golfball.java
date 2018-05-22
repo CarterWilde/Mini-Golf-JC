@@ -31,7 +31,6 @@ public class Golfball extends Sprite implements MouseListener, MouseMotionListen
     hasEntered = false;
     setBounds(250, 250, 50, 50);
     setImage("GolfBall.png");
-    setVisible(true);
     power = 0D;
     powerRatio = 4D;
     deltaX = 0;
@@ -97,7 +96,7 @@ public class Golfball extends Sprite implements MouseListener, MouseMotionListen
   }
 
   //Sprite methods
-  public void move() {
+   public void move() {
     setSpeed(getX() + deltaX, getY() + deltaY);
   }
 
