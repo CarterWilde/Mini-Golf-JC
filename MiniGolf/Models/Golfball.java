@@ -1,3 +1,5 @@
+package Models;
+
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
@@ -10,7 +12,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JComponent;
 
-public class GolfBall extends Sprite implements MouseListener, MouseMotionListener {
+import Views.*;
+
+public class Golfball extends Sprite implements MouseListener, MouseMotionListener {
   /*
    * We need to make sure we have entered the area of the ball and then figure
    * use that
@@ -23,7 +27,7 @@ public class GolfBall extends Sprite implements MouseListener, MouseMotionListen
 
   private int deltaX, deltaY;
 
-  public GolfBall() {
+  public Golfball() {
     hasEntered = false;
     setBounds(250, 250, 50, 50);
     setImage("GolfBall.png");
@@ -103,7 +107,7 @@ public class GolfBall extends Sprite implements MouseListener, MouseMotionListen
     win.setBounds(0, 0, 500, 500);
     win.setLayout(null);
     win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    GolfBall ball = new GolfBall();
+    Golfball ball = new Golfball();
     win.addMouseListener(ball);
     win.addMouseMotionListener(ball);
     win.add(ball);
