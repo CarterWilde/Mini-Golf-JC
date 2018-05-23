@@ -10,14 +10,12 @@ import java.util.Timer;
 
 import java.awt.Component;
 public class Golfball extends Sprite implements MouseListener {
-  int mouseX, mouseY, deltaX, deltaY, powerFactor;
+  int deltaX, deltaY, powerFactor;
   boolean canMove;
   JFrame win;
   //X1 and Y1 is the mousePoint
   int X2, Y2;
   public Golfball(JFrame w){
-    mouseX = 0;
-    mouseY = 0;
     deltaX = 0;
     deltaY = 0;
     powerFactor = 7;
