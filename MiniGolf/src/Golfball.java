@@ -78,6 +78,33 @@ public class Golfball extends Sprite implements MouseListener {
   int getDeltaY(){
     return getY() + getHeight()/2 - Y2;
   }
+  void setDeltaX(int dx){
+    deltaX = dx;
+  }
+  void setDeltaY(int dy){
+    deltaY = dy;
+  }
+
+  public boolean collides (int top,int bottom, int left, int right){
+    int thistop = getY();
+    int thisbottom = getY() + getHeight();
+    int thisleft = getX();
+    int thisright = getX() + getWidth();
+    if(thisleft<right&&thisleft>left&&thisbottom>top&&thisbottom<bottom){
+      return true;
+    }
+    if(thisright>left&&thisright<right&&thisbottom>top&&thisbottom<bottom){
+      return true;
+    }
+    if(thisleft<right&&thisleft>left&&thistop<bottom&&thistop>top){
+      return true;
+    }
+    if(thisright>left&&thisright<right&&thistop<bottom&&thistop>top){
+      return true;
+    }
+    return false;
+  }
+
   public static void main(String[] args) {
     JFrame win = new JFrame();
     win.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

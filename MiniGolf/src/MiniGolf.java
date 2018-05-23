@@ -18,6 +18,11 @@ public class MiniGolf extends Game{
         @Override
         public void run() {
           gb.move();
+          if(gb.collides(r.getY(),
+                         r.getY() + r.getHeight(),
+                         r.getX(),
+                         r.getX() + r.getWidth())){
+          }
         }
       }, 25, 25);
     }
