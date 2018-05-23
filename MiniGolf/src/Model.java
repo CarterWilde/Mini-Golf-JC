@@ -1,7 +1,3 @@
-package Models;
-
- 
-
 public interface Model{
     public void setStrings(String[] s);
     public void setInts(int[] i);

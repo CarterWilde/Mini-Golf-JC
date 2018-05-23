@@ -1,6 +1,4 @@
-package Views;
-
-import java.awt.*;
+import java.awt.Rectangle;
 
 public abstract class Sprite extends EzImage {
     protected int dx, dy;//variables for speed, for x and y
@@ -12,27 +10,25 @@ public abstract class Sprite extends EzImage {
         this.changeImage(fpath);
         dx = deltax;
         dy = deltay;
-        rect = new Rectangle();
+        rect = new java.awt.Rectangle(0,0,0,0);
     }
 
     //default constructor.  if used, all variables need to be added manually with setters
     public Sprite(){
         super();
-        rect = new Rectangle();
+        rect = new Rectangle(0,0,0,0);
     }
 
     //sets location
-    public void setLocation(int x, int y)
-    {
+    public void setLocation(int x, int y){
         super.setLocation(x,y);
         rect.setLocation(x,y);
     }
 
     //sets the speed
-    public void setSpeed(int deltax, int deltay)
-    {
-        dx=deltax;
-        dy=deltay;
+    public void setSpeed(int deltax, int deltay){
+        dx = deltax;
+        dy = deltay;
     }
 
     //sets the image, takes in filepath string
