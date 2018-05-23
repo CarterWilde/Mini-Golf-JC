@@ -1,7 +1,3 @@
-package Views;
-
- 
-
 import javax.swing.*;
 import java.awt.event.*;
 

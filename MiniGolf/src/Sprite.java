@@ -1,5 +1,3 @@
-package Views;
-
 import java.awt.Rectangle;
 
 public abstract class Sprite extends EzImage {
@@ -22,17 +20,15 @@ public abstract class Sprite extends EzImage {
     }
 
     //sets location
-    public void setLocation(int x, int y)
-    {
+    public void setLocation(int x, int y){
         super.setLocation(x,y);
         rect.setLocation(x,y);
     }
 
     //sets the speed
-    public void setSpeed(int deltax, int deltay)
-    {
-        dx=deltax;
-        dy=deltay;
+    public void setSpeed(int deltax, int deltay){
+        dx = deltax;
+        dy = deltay;
     }
 
     //sets the image, takes in filepath string
