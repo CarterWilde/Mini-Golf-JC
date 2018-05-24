@@ -3,6 +3,8 @@ package src;
 import java.util.TimerTask;
 import java.util.Timer;
 
+import javax.swing.JComponent;
+
 public class MiniGolf extends Game{
     public MiniGolf(boolean sb){
         super(sb);
@@ -10,7 +12,7 @@ public class MiniGolf extends Game{
 
     public static void main(String[]args){
       MiniGolf mg = new MiniGolf(false);
-      Rectangle r = new Rectangle(300,100,25,100);
+      JComponent r = new Rectangle(300,100,25,100);
       Golfball gb = new Golfball(mg.getUI());
       mg.getUI().add(r);
       mg.getUI().add(gb);
@@ -20,10 +22,9 @@ public class MiniGolf extends Game{
         @Override
         public void run() {
           gb.move();
-          if(gb.collides(r.getY(),
-                         r.getY() + r.getHeight(),
-                         r.getX(),
-                         r.getX() + r.getWidth())){
+          if(gb.collides(r)){
+              gb.setDeltaY(gb.deltaY * -1);
+              gb.setDeltaX(gb.deltaX * -1);
           }
         }
       }, 25, 25);

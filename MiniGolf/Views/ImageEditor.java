@@ -1,3 +1,5 @@
+package Views;
+
 public class ImageEditor{
 	private BufferedImage img;
 	private File f;

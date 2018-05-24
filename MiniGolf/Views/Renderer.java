@@ -1,3 +1,5 @@
+package Views;
+
 
 public class Renderer extends JComponent{
 	public Queue<JComponent> renderQueue;
