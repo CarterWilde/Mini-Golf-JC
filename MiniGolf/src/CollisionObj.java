@@ -1,13 +1,10 @@
 package src;
 
 import javax.swing.JComponent;
-public abstract class CollisionObject extends Sprite
-{
+public abstract class CollisionObj extends Sprite{
     int thistop, thisbottom, thisleft, thisright;
     int top, bottom, left, right;
-    public CollisionObject(){
-
-    }
+    public CollisionObj(){}
 
     public abstract void move();
 

@@ -11,7 +11,7 @@ import java.util.TimerTask;
 import java.util.Timer;
 
 import java.awt.Component;
-public class Golfball extends CollisionObject implements MouseListener {
+public class Golfball extends CollisionObj implements MouseListener {
     int deltaX, deltaY, powerFactor;
     boolean canMove;
     JFrame win;

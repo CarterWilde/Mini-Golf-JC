@@ -1,4 +1,4 @@
-package Views;
+package src;
 
 public class Pixel{
 	private short r, g, b, a;
