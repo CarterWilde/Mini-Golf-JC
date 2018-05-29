@@ -1,4 +1,4 @@
-package src;
+ 
 
 public interface Model{
     public void setStrings(String[] s);

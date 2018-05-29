@@ -1,5 +1,3 @@
-package src;
-
 public class Pixel{
 	private short r, g, b, a;
 	public Pixel(int r, int g, int b, int a){
