@@ -19,15 +19,15 @@ public class Golfball extends CollisionObj implements MouseListener {
     JFrame win;
     //X1 and Y1 is the mousePoint
     int X2, Y2;
-    public Golfball(JFrame w){
+    public Golfball(int x, int y, int w, int h, JFrame jf){
         deltaX = 0;
         deltaY = 0;
         powerFactor = 7;
         X2 = 0;
         Y2 = 0;
         canMove = true;
-        win = w;
-        setBounds(100, 150, 75, 75);
+        win = jf;
+        setBounds(x, y, w, h);
         setImage("GolfBall.png");
     }
 
@@ -102,7 +102,7 @@ public class Golfball extends CollisionObj implements MouseListener {
         win.setBounds(0, 0, 500, 500);
         win.setVisible(true);
         win.setLayout(null);
-        Golfball ball = new Golfball(win);
+        Golfball ball = new Golfball(300, 300, 75, 75, win);
         win.add(ball);
         win.addMouseListener(ball);
         Timer timer = new Timer();
