@@ -18,7 +18,6 @@ public class MiniGolf extends Game{
         @Override
         public void run() {
           gb.move();
-          System.out.println(gb.intersects(r));
         }
       }, 25, 25);
     }
